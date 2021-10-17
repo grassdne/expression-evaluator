@@ -47,3 +47,57 @@ RESULT: 69.0
 RESULT: 10.9
 CONVERTED BACK: 10 - 2 ^ 2 / 1 / 40 % - 7 * 20 + - 1
 ```
+
+```py
+====== CALCULATE ======
+> 1+2+3+4+5+6+7+8+9+10      
+
+BinaryExpr(left=BinaryExpr(left=BinaryExpr(left=BinaryExpr(left=BinaryExpr(left=BinaryExpr(left=BinaryExpr(left=BinaryExpr(left=BinaryExpr(left=1, oper=BiOper.PLUS, right=2), oper=BiOper.PLUS, right=3), oper=BiOper.PLUS, right=4), oper=BiOper.PLUS, right=5), oper=BiOper.PLUS, right=6), oper=BiOper.PLUS, right=7), oper=BiOper.PLUS, right=8), oper=BiOper.PLUS, right=9), oper=BiOper.PLUS, right=10)
+
+                                    1
+                                +
+                                    2
+                            +
+                                3
+                        +
+                            4
+                    +
+                        5
+                +
+                    6
+            +
+                7
+        +
+            8
+    +
+        9
++
+    10
+
+RESULT: 55
+
+===== Inverting Tree =====
+
+    10
++
+        9
+    +
+            8
+        +
+                7
+            +
+                    6
+                +
+                        5
+                    +
+                            4
+                        +
+                                3
+                            +
+                                    2
+                                +
+                                    1
+
+RESULT: 55
+CONVERTED BACK: 10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1
+```
